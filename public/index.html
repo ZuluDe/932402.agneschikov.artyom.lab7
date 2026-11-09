@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статьи блога Лабораторная №7</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main>
+    <h1>Статьи блога</h1>
+
+    <form id="article-form" class="card form-box">
+      <input type="text" id="title" placeholder="Заголовок статьи (для проверки ошибки 400 оставьте пустым)">
+      <textarea id="content" rows="3" placeholder="Текст статьи..."></textarea>
+      <button type="submit">Сохранить черновик</button>
+    </form>
+
+    <div id="error-box" class="error-box" hidden></div>
+
+    <div class="toolbar">
+      <label class="filter-label">
+        <input type="checkbox" id="published-filter">
+        Показать только опубликованные (?published=true)
+      </label>
+    </div>
+
+    <div id="articles-list" class="list"></div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
